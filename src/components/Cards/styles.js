@@ -28,21 +28,22 @@ export const Card = styled.button`
   height: 300px;
   left: 39px;
   top: 42px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.3);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
+  background: white;
   color: inherit;
   transition:  0.7s ease-in-out ;
   margin-top: 16px;
+  border: none;
 
 
 
   &:hover {
     background: ${({theme}) => theme.colors.primary.cardColor};
-    color: white;
+    color: ${({theme}) => theme.colors.primary.letterColor};
     height: 300px;
     width: 240px;
     transform: scale3d(1.2,1.2,1.6);
@@ -56,6 +57,7 @@ export const Card = styled.button`
   };
 
   &:not(:hover) {
+    color: '#ffffff';
 
     opacity: 0.8;
     transform: scale3d(1);

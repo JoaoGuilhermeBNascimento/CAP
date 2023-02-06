@@ -19,22 +19,24 @@ export const Container = styled.div`
     justify-content: flex-start;
     align-items:center;
 
+
   }
 
   .buttons {
     display: flex;
+    flex-direction: column;
     margin-left: 24px;
+    align-items: center;
+    justify-content: center;
   }
 
 `;
 
 export const Link = styled.a`
   display: flex;
-  width: 140px;
-  height: 160px;
-
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
-  justify-content: center;
+  width: 1640px;
+  height: 52px;
+  justify-content: flex-start;
   align-items: center;
   text-decoration: none;
   color: inherit;
@@ -43,13 +45,15 @@ export const Link = styled.a`
   gap: 12px;
   overflow-wrap: break-word;
   font-size: 14px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 
 
   & + a {
     display: flex;
     margin: 4px 8px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
   }
 

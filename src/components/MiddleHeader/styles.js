@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   span {
 
-    color: ${({theme}) => theme.colors.primary.letters};
+    color: ${({theme}) => theme.colors.primary.background};
     font-style: normal;
     font-weight: 600;
     font-size: 30px;

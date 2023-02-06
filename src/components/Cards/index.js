@@ -8,10 +8,13 @@ import { ModalCards } from '../Modal';
 import { ModalCode } from '../ModalCode';
 import { ModalChecklist } from '../ModalChecklist';
 import { ModalDocument } from '../ModalDocument';
+import { ModalInstruction } from '../ModalInstruction';
+import { ModalReport } from '../ModalReport';
+import { ModalApresentation } from '../ModalApresentation';
 
 const buttonClicked = {
   backgroundColor: '#0e4a70',
-  color: '#f5f5f5',
+  color: '#ffffff',
   fontSize: '20px',
   width: '240px',
   transform: 'scale3d(1.1, 1.1, 1.6)'
@@ -24,6 +27,9 @@ export function Cards() {
   const [modalCode, setModalCode] = useState(false);
   const [modalCheck, setModalCheck] = useState(false);
   const [modalDocument, setModalDocument] = useState(false);
+  const [modalInstructions, setModalInstructions] = useState(false);
+  const [modalReport, setModalReport] = useState(false);
+  const [modalApresentation, setModalApresentation] = useState(false);
 
 
 
@@ -84,16 +90,28 @@ export function Cards() {
             <h3>Modelo de Documentos</h3>
             <span>Vídeos explicativos dos procedimentos do CAPWEB</span>
           </Card>
-          
-          <Card href='#' target='_blank'>
+
+          <Card type='button' onClick={() => setModalInstructions(!modalInstructions)}
+            style={modalInstructions ? buttonClicked : {}}
+          >
             <img src={instruction} alt="logo de vídeos" />
             <h3>Instruções Normativas</h3>
             <span>Instruções normativas ULIC / CAP</span>
           </Card>
-          <Card href='#' target='_blank'>
+          <Card onClick={() => setModalReport(!modalReport)}
+            style={modalReport ? buttonClicked : {}}
+          >
             <img src={Computer} alt="logo de vídeos" />
             <h3>Relatórios de Produção</h3>
             <span>Relatórios Estratégicos de gestão e de serviços CAP</span>
+          </Card>
+          <Card onClick={() => setModalApresentation(!modalApresentation)}
+            style={modalApresentation ? buttonClicked : {}}
+
+          >
+            <img src={Codigo} alt="logo de vídeos" />
+            <h3>Apresentações, Cartilhas e Palestras</h3>
+            <span>Informações sobre licenciamento</span>
           </Card>
 
         </div>
@@ -105,6 +123,9 @@ export function Cards() {
       {modalCode && (<ModalCode />)}
       {modalCheck && (<ModalChecklist />)}
       {modalDocument && <ModalDocument/>}
+      {modalInstructions && <ModalInstruction />}
+      {modalReport && <ModalReport />}
+      {modalApresentation && <ModalApresentation />}
     </>
   );
 }

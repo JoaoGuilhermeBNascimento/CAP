@@ -35,7 +35,7 @@ export const Card = styled.button`
   text-decoration: none;
   background: white;
   color: inherit;
-  transition:  0.7s ease-in-out ;
+  transition:  0.5s ease-out ;
   margin-top: 16px;
   border: none;
 

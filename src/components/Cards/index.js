@@ -22,6 +22,7 @@ const buttonClicked = {
 
 
 
+
 export function Cards() {
   const [activated, setActivated] = useState(false);
   const [modalCode, setModalCode] = useState(false);
@@ -30,8 +31,12 @@ export function Cards() {
   const [modalInstructions, setModalInstructions] = useState(false);
   const [modalReport, setModalReport] = useState(false);
   const [modalApresentation, setModalApresentation] = useState(false);
+  const [selectedButton, setSelectedButton] = useState(null);
 
-
+  const handleButtonClick = (index) => {
+    setSelectedButton(index);
+    console.log(index);
+  };
 
 
 
@@ -45,11 +50,13 @@ export function Cards() {
         <div className="box">
 
 
-
           <Card
             type='button'
-            onClick={() => setActivated(!activated)}
-            style={activated ? buttonClicked : {}}
+            onClick={() => {
+              setActivated(!activated);
+              handleButtonClick(1);
+            }}
+            style={selectedButton  === 1 && activated ? buttonClicked : {}}
           >
             <img src={videoLogo} alt="logo de vídeos" />
             <h3>Vídeos explicativos</h3>
@@ -58,9 +65,14 @@ export function Cards() {
 
 
           <Card
+
             type='button'
-            onClick={() => setModalCode(!modalCode)}
-            style={modalCode ? buttonClicked : {}}
+            onClick={() => {
+              setModalCode(!modalCode);
+              handleButtonClick(2);
+
+            }}
+            style={selectedButton  === 2 && modalCode ? buttonClicked : {}}
 
 
           >
@@ -71,8 +83,15 @@ export function Cards() {
 
 
 
-          <Card onClick={() => setModalCheck(!modalCheck)}
-            style={modalCheck ? buttonClicked : {}}
+          <Card
+
+
+            onClick={() => {
+              setModalCheck(!modalCheck);
+              handleButtonClick(3);
+
+            }}
+            style={ selectedButton === 3 && modalCheck ? buttonClicked : {}}
 
           >
             <img src={instruction} alt="logo de vídeos" />
@@ -82,8 +101,13 @@ export function Cards() {
 
 
           <Card
-            onClick={() => setModalDocument(!modalDocument)}
-            style={modalDocument ? buttonClicked : {}}
+
+
+            onClick={() => {
+              setModalDocument(!modalDocument);
+              handleButtonClick(4);
+            }}
+            style={selectedButton === 4 && modalDocument  ? buttonClicked : {}}
 
           >
             <img src={Codigo} alt="logo de vídeos" />
@@ -91,22 +115,38 @@ export function Cards() {
             <span>Vídeos explicativos dos procedimentos do CAPWEB</span>
           </Card>
 
-          <Card type='button' onClick={() => setModalInstructions(!modalInstructions)}
-            style={modalInstructions ? buttonClicked : {}}
+          <Card
+
+            type='button' onClick={() => {
+              setModalInstructions(!modalInstructions);
+              handleButtonClick(5);
+
+            }}
+            style={selectedButton === 5 && modalInstructions  ? buttonClicked : {}}
           >
             <img src={instruction} alt="logo de vídeos" />
             <h3>Instruções Normativas</h3>
             <span>Instruções normativas ULIC / CAP</span>
           </Card>
-          <Card onClick={() => setModalReport(!modalReport)}
-            style={modalReport ? buttonClicked : {}}
+
+          <Card
+
+            onClick={() => {
+              setModalReport(!modalReport);
+              handleButtonClick(6);
+            }}
+            style={selectedButton === 6 && modalReport  ? buttonClicked : {}}
           >
             <img src={Computer} alt="logo de vídeos" />
             <h3>Relatórios de Produção</h3>
             <span>Relatórios Estratégicos de gestão e de serviços CAP</span>
           </Card>
-          <Card onClick={() => setModalApresentation(!modalApresentation)}
-            style={modalApresentation ? buttonClicked : {}}
+          <Card
+            onClick={() => {
+              setModalApresentation(!modalApresentation);
+              handleButtonClick(7);
+            }}
+            style={selectedButton === 7 && modalApresentation  ? buttonClicked : {}}
 
           >
             <img src={Codigo} alt="logo de vídeos" />
@@ -117,15 +157,17 @@ export function Cards() {
         </div>
 
 
+
+
       </Container>
-      {activated && (<ModalCards />
-      )}
-      {modalCode && (<ModalCode />)}
-      {modalCheck && (<ModalChecklist />)}
-      {modalDocument && <ModalDocument/>}
-      {modalInstructions && <ModalInstruction />}
-      {modalReport && <ModalReport />}
-      {modalApresentation && <ModalApresentation />}
+      {activated && selectedButton === 1 && <ModalCards />
+      }
+      {modalCode && selectedButton === 2 && <ModalCode />}
+      {modalCheck && selectedButton === 3 && <ModalChecklist />}
+      {modalDocument && selectedButton === 4 && <ModalDocument/>}
+      {modalInstructions && selectedButton === 5 && <ModalInstruction />}
+      {modalReport && selectedButton === 6 && <ModalReport />}
+      {modalApresentation && selectedButton === 7 && <ModalApresentation />}
     </>
   );
 }

@@ -14,6 +14,7 @@ export const Container = styled.div`
     margin: 60px auto;
     align-items: center;
     justify-content: center;
+
   }
 
 
@@ -24,7 +25,7 @@ export const Container = styled.div`
 
 export const Card = styled.button`
   display: flex;
-  width: 220px;
+  width: 200px;
   height: 300px;
   left: 39px;
   top: 42px;

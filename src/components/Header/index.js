@@ -21,7 +21,7 @@ export function Header() {
         <CapContainer>
           <div className="buttonConfig">
 
-            <button href="http://capcidadao.seduh.df.gov.br/" target='_blank' rel="noreferrer">
+            <button >
               <img src={user} alt="usuário icon" />
 
               <a href="http://capcidadao.seduh.df.gov.br/" target='_blank' rel="noreferrer">

@@ -6,13 +6,13 @@ export function ModalCode() {
     <Container>
       <div className="box">
 
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2019/02/Documento_auxiliar_Comparativo_Lei_n_2_105_98_e_Decreto_n_19_915_98.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2019/02/Documento_auxiliar_Comparativo_Lei_n_2_105_98_e_Decreto_n_19_915_98.pdf" target="_blank">
         Documento auxiliar Comparativo Lei nº 2.105/1998 e Decreto nº 19.915/98
         </Link>
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2021/05/COE_Anexos_2016.12.19_compilado.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2021/05/COE_Anexos_2016.12.19_compilado.pdf" target="_blank">
         Anexos do Decreto nº 19.915/98
         </Link>
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2019/08/I_Requerimento_Padrao_COE_antigo.doc">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2019/08/I_Requerimento_Padrao_COE_antigo.doc" target="_blank">
         Requerimento Padrão (COE ANTIGO)
         </Link>
 

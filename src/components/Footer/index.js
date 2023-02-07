@@ -67,17 +67,17 @@ export function Footer() {
             <h3>SISTEMAS MAIS ACESSADOS</h3>
           </div>
           <div className="logos">
-            <a href="https://www.geoportal.seduh.df.gov.br/geoportal/">
+            <a href="https://www.geoportal.seduh.df.gov.br/geoportal/" target="_blank" rel='noreferrer' >
 
-              <img src={geoportal} alt="site de busca de normas" />
+              <img src={geoportal} alt="site de busca de normas"  />
             </a>
-            <a href="https://www.sisduc.seduh.df.gov.br/v1/">
+            <a href="https://www.sisduc.seduh.df.gov.br/v1/" target="_blank" rel='noreferrer'>
 
               <img src={sisduc} alt="site de normas" />
 
             </a>
 
-            <a href="https://sysaga.decea.mil.br/">
+            <a href="https://sysaga.decea.mil.br/" target="_blank" rel='noreferrer'>
 
               <img src={sysaga} alt="comaer" />
             </a>

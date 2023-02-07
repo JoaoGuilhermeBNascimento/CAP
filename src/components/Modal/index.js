@@ -5,22 +5,22 @@ export function ModalCards() {
     <Container>
       <div className="box">
 
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST%E2%80%93VIABILIDADE-LEGAL.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST%E2%80%93VIABILIDADE-LEGAL.pdf"  target="_blank">
         Checklist Viabilidade Legal
         </Link>
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-ESTUDO-PR%C3%89VIO.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-ESTUDO-PR%C3%89VIO.pdf" target="_blank">
         Checklist Análise Concomitante
         </Link>
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-AN%C3%81LISE-CONCOMITANTE.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-AN%C3%81LISE-CONCOMITANTE.pdf" target="_blank">
         Checklist Análise Conjunta
         </Link>
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST%E2%80%93VIABILIDADE-LEGAL.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST%E2%80%93VIABILIDADE-LEGAL.pdf" target="_blank">
         Checklist Viabilidade Legal
         </Link>
         <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-ESTUDO-PR%C3%89VIO.pdf">
         Checklist Análise Concomitante
         </Link>
-        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-AN%C3%81LISE-CONCOMITANTE.pdf">
+        <Link href="http://www.cap.seduh.df.gov.br/wp-content/uploads/2020/03/CHECK-LIST-AN%C3%81LISE-CONCOMITANTE.pdf" target="_blank">
         Checklist Análise Conjunta
         </Link>
       </div>
